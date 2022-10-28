@@ -3,7 +3,7 @@ Assignment: mec-5.5.4-web-scraping-mini-project
 
 scripts:
 
-user@ubuntu:~/SC5.5.4/scrapyminiproject/scrapyminiproject$ more spiders/toscrape-css.py  
+toscrape-css.py  
 ```python  
 import scrapy  
 
@@ -25,7 +25,7 @@ class QuotesSpider(scrapy.Spider):
             yield scrapy.Request(next_page, callback=self.parse)
 ```
 
-user@ubuntu:~/SC5.5.4/scrapyminiproject/scrapyminiproject$ more spiders/toscrape-xpath.py  
+toscrape-xpath.py  
 ```python  
 import scrapy
 class QuotesSpider(scrapy.Spider):
@@ -52,5 +52,5 @@ run:
 `scrapy crawl toscrape-xpath -o xpath-scraper-results.json`  
 
 outputs:  
-  https://github.com/wdmhouston/SC5.5.4/blob/main/scrapyminiproject/scrapyminiproject/css-scraper-results.json  
+  [[https://github.com/wdmhouston/SC5.5.4/blob/main/scrapyminiproject/scrapyminiproject/css-scraper-results.json]
   https://github.com/wdmhouston/SC5.5.4/blob/main/scrapyminiproject/scrapyminiproject/xpath-scraper-results.json  
