@@ -9,6 +9,7 @@ You can also check the finished [Sagemaker notebook](https://github.com/vveizhan
 
 #### Use wandb sweep grid serach to optimize the hyperparameter
 
+
 ```python
 class SentimentClassifier(nn.Module):
     def __init__(self, n_classes):
@@ -28,7 +29,7 @@ PRE_TRAINED_MODEL_NAME = 'bert-base-cased'
 tokenizer = BertTokenizer.from_pretrained(PRE_TRAINED_MODEL_NAME)
 data_loader = create_data_loader(df, tokenizer, BATCH_SIZE, max_len=300)
 ```
-
+Choose the val_accurary as the performance metric. 
 
 ```python
 import wandb
