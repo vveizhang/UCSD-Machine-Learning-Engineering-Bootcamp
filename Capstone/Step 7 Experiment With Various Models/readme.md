@@ -76,7 +76,7 @@ wandb.agent(sweep_id, train)
 The wandb will generate a parallel coordinates plot, a parameter importance plot, and a scatter plot when you start a W&B Sweep job. 
 
 <p align="center">
-<img src="/imgs/para_coord-1127.png">
+<img src="imgs/para_coord-1127.png">
 <br>
 <em>parallel coordinates plot</em></p>
 
