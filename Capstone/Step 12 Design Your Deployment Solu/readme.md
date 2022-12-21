@@ -7,7 +7,7 @@
 ## 1. diagram of the deployment architecture
 
 <p align="center">
-<img src="/imgs/diagram.png">
+<img src="https://github.com/vveizhang/UCSD-Machine-Learning-Engineering-Bootcamp/blob/main/Capstone/Step%2012%20Design%20Your%20Deployment%20Solu/imgs/diagram.png">
 <br>
 <em>diagram of the deployment architecture</em></p>
 
