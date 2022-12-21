@@ -3,7 +3,7 @@
 To scale the model prototype, the easiest way to scal the model prototype is containerization.
 Containerization is a software deployment process that bundles an application’s code with all the files and libraries it needs to run on any infrastructure. Traditionally, to run any application on your computer, you had to install the version that matched your machine’s operating system. For example, you needed to install the Windows version of a software package on a Windows machine. However, with containerization, you can create a single software package, or container, that runs on all types of devices and operating systems. 
 
-###1. Create docker file
+1. Create docker file
 ```bash
 # base image
 FROM python:3.7.4-slim-stretch
@@ -46,7 +46,7 @@ enableCORS = false\n\
 " > /root/.streamlit/config.toml'
 ```
 
-###2. Create requirements file
+2. Create requirements file
 
 ```python
 -f https://download.pytorch.org/whl/torch_stable.html 
@@ -58,7 +58,7 @@ numpy
 tqdm
 ```
 
-###3. Create python functions file
+3. Create python functions file
 
 ```python
 import streamlit as st
@@ -120,7 +120,7 @@ def run_model(input, model):
         return(result)
 ```
 
-###4. Create python streamlit app file
+4. Create python streamlit app file
 ```python
 import streamlit as st
 from funcs import load_model, input_fn, run_model
@@ -159,7 +159,7 @@ if st.button("Run Bert!"):
 ```
 
 
-###5. Build docker image file
+5. Build docker image file
 Then, copy the code into the cloud using git:
 
 git clone https://github.com/vveizhang/Bitcoin_Social_Media_Sentiment_Analysis.git
